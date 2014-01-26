@@ -19,4 +19,4 @@ gen([H|T], Rules, NonTerm, Result) :-
     member(H, NonTerm),
     tryRule(H, Rules, NewHead),
     append(NewHead, T, NewSeq),
-    gen(NewSeq, Rules, NonTerm, Result).    
+    gen(NewSeq, Rules, NonTerm, Result).
